@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sentiment Analysis</title>
+</head>
+<body>
+    <h1>Sentiment Analysis App</h1>
+    <form method="POST">
+        <label for="query1">Enter your text:</label><br>
+        <input type="text" id="query1" name="query1" value="{{ query1 }}" required><br><br>
+        <input type="submit" value="Analyze">
+    </form>
+    {% if output1 %}
+        <h3>Result:</h3>
+        <p>{{ output1 }}</p>
+    {% endif %}
+</body>
+</html>
